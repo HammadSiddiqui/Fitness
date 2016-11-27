@@ -1,0 +1,131 @@
+<template name="home">
+        <section id="splashScreen">
+            <div class="container">
+            <!-- Call to Actions-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="main">
+                            <h1 class="thin pacifico">Fitness 101</h1>
+
+                            <br>
+                            <p>Where do you lie on the obesity scale?<br>
+                                Find out now through our Fitness 101 app.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img id="breadImg" src="img/bread.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+        <section id="getStarted">
+            <div class="row" style="padding-right: 40px;">
+                <div class="col-md-6 text-center">
+                    <h1>Let’s count your calories intake</h1>
+                    <h5>we create delicious memories</h5>
+                    <p>Fitness 101 is an awareness platform for indivduals to recognise where <br> they lie on the obesity scale.
+                        Whether they need to check their diet or <br> they’re good to go.</p>
+                    <h4>Testimonials</h4>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-3">
+                           <h4>Hammad</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-circle" src="img/testimonial.png" alt="testimonial" width="100">
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Siddiqui</h4>
+                        </div>
+                    </div>
+
+                    <p>I’ve become more aware of my body! <br>
+                        Thankyou Fitness 101.</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="img/getstarted.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        </div>
+
+        <section id="appetite">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Appetite</h1>
+                        <h4>Enter your regular consumptions on an average day</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <select class="chzn-select" multiple="true" name="food" style="width:200px;">
+                         {{#each food}}
+                            <option value={{value}}>{{meal}}</option>
+                         {{/each}}
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                        <h4 style="margin-top: 50px">Enter your Weight</h4>
+                        <form class="js-weight">
+                            <input class="weightMeasure" type="number" name="weight" placeholder="Only Numbers in KiloGrams" min="0" step="0.5">
+                            <button style="background: transparent; margin-top: 30px;" class="exerciseBtn button2" type="submit">Ok</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercise">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1>Step 2: Do you exercise?</h1>
+                                <a href="#" class="exerciseBtn button2 js-everyday">Everyday!</a> <br>
+                                <a href="#" class="exerciseBtn button2 js-sometimes">Sometimes</a> <br>
+                                <a href="#" class="exerciseBtn button2 js-never">Never</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <div id="letsGo">
+                            <h2>Step 3
+                                Calculator GO</h2>
+                            <p>By clicking the Go buton below you agree that
+                                Fitness 101 in no way is trying to body shame you
+                                but ust creating health awareness about
+                                obesity.</p>
+                            <a href="#" class="exerciseBtn button3">Go</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    <!-- Container Closed -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-4 text-center">
+                    <p>Project by: <a href="http://hammadsiddiqui.net">Hammad Siddiqui</a>, Misbah Azhar &amp; Sakina Ijaz</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</template>
