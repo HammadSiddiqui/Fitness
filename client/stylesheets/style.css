@@ -5,8 +5,8 @@
 */
 
 /* FONT Import */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 body {
   background-size: cover;
@@ -53,7 +53,7 @@ body {
 #appetite {
     border-bottom: 10px #483535 solid;
     padding-top: 50px;
-    padding-bottom: 350px;
+    padding-bottom: 100px;
     background:rgba(0,0,0,.5) url('../img/appetite.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -84,7 +84,7 @@ body {
 }
 
 #exercise {
-    border-bottom: 10px #483535 solid;
+
     padding-top: 50px;
     padding-bottom: 50px;
     background:rgba(0,0,0,.5) url('../img/excercise.jpg') no-repeat center center fixed;
@@ -185,15 +185,44 @@ h1, .h1, h2, .h2, h3, .h3 {
 .button3 {
     color: #a47d5e;
     box-shadow: #a47d5e 0 0px 0px 2px inset;
+    border:none;
 }
 
 .button3:hover {
     color:#fafafa;
     box-shadow: #a47d5e 0 80px 0px 2px inset;
+
+}
+#results {
+    color: #fafafa;
+    background: #ecae35;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.bodyType {
+    background: #fafafa;
+    color: #a47d5e;
+    height: auto;
+    margin-top: 50px;
 }
 
+.bodyType img {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.cal-details {
+    padding: 10px 0px;
+    bottom: 0px;
+    background: #a47d5e;
+    color:#fafafa;
+}
+
+.values {
+    font-size: 22px;
+    font-weight: 600;
+}
 footer {
-   margin-top: 220px;
    padding-bottom: 20px;
 }
 
