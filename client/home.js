@@ -98,7 +98,7 @@ Template.home.onRendered(function () {
     }
     $(".chzn-select").on('change', function(evt, params) {
 
-        if(params.selected){
+        if(params.selected) {
             console.log("Selected");
             var oldCalories = Session.get('totalCalories');
             var newCalories = parseInt(params.selected, 10)
