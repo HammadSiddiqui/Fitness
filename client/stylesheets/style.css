@@ -39,11 +39,17 @@ body {
 
 #getStarted p {
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-weight:bold;
 }
+
 
 #getStarted h5 {
     color: #a47d5e;
+}
+
+#getStarted h4 {
+    font-weight: bold;
 }
 
 #getStarted h1 {
@@ -104,8 +110,8 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 45px;
-    width: 390px;
-    height: 550px;
+    width: 100%px;
+    height: auto;
     padding-top: 150px;
     padding-bottom: 50px;
     background:url('../img/letsgo.png') 0px no-repeat;

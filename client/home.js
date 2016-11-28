@@ -94,7 +94,7 @@ Template.home.events({
 Template.home.onRendered(function () {
 
     if(Calories.find()){
-        $(".chzn-select").chosen({no_results_text: "Oops, nothing found!", width: "350px"});
+        $(".chzn-select").chosen({no_results_text: "Oops, nothing found!", width: "100%", inherit_select_classes: true});
     }
     $(".chzn-select").on('change', function(evt, params) {
 
