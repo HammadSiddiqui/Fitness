@@ -58,8 +58,8 @@ body {
 
 #appetite {
     border-bottom: 10px #483535 solid;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background:rgba(0,0,0,.5) url('../img/appetite.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -107,9 +107,9 @@ body {
 }
 
 #letsGo {
+    margin-top: 150px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 45px;
     width: 100%px;
     height: auto;
     padding-top: 150px;
