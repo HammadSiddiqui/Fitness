@@ -4,7 +4,7 @@ DATA = [
         "value": 104
     },
     {
-        "meal": "roti",
+        "meal": "roti/Chappati",
         "value": 71
     },
     {
@@ -330,5 +330,193 @@ DATA = [
     {
         "meal": "Crossiant ",
         "value": 271
+    },
+    {
+        "meal": "Boiled Egg",
+        "value": 60
+    },
+    {
+        "meal": "Freid Egg ",
+        "value": 90
+    },
+    {
+        "meal": "Omelette ",
+        "value": 94
+    },
+    {
+        "meal": "Cheese Omelette",
+        "value": 98
+    },
+    {
+        "meal": "Poached Eggs",
+        "value": 71
+    },
+    {
+        "meal": "Raw Egg ",
+        "value": 72
+    },
+    {
+        "meal": "Bread ",
+        "value": 79
+    },
+    {
+        "meal": "Brown Bread",
+        "value": 73
+    },
+    {
+        "meal": "Paratha",
+        "value": 212
+    },
+    {
+        "meal": "Roti ",
+        "value": 106
+    },
+    {
+        "meal": "Pancakes ",
+        "value": 64
+    },
+    {
+        "meal": "Waffles ",
+        "value": 82
+    },
+    {
+        "meal": "Apple ",
+        "value": 95
+    },
+    {
+        "meal": "Orange juice ",
+        "value": 39
+    },
+    {
+        "meal": "Coffee",
+        "value": 1
+    },
+    {
+        "meal": "Green tea with sugar ",
+        "value": 2
+    },
+    {
+        "meal": "Tea",
+        "value": 2
+    },
+    {
+        "meal": "Honey 1tbsp ",
+        "value": 64
+    },
+    {
+        "meal": "Corn Flakes (1 cup)",
+        "value": 100
+    },
+    {
+        "meal": "Milk full cream (250ml)",
+        "value": 162
+    },
+    {
+        "meal": "Sausages",
+        "value": 229
+    },
+    {
+        "meal": "Rusk",
+        "value": 41
+    },
+    {
+        "meal": "Apple juice ",
+        "value": 113
+    },
+    {
+        "meal": "pomergranate juice ",
+        "value": 136
+    },
+    {
+        "meal": "Biscuits (1)",
+        "value": 3.5
+    },
+    {
+        "meal": "Croissant",
+        "value": 231
+    },
+    {
+        "meal": "Chicken Sandwich",
+        "value": 515
+    },
+    {
+        "meal": "Lassi with sugar",
+        "value": 230
+    },
+    {
+        "meal": "Yogurt (1 cup)",
+        "value": 100
+    },
+    {
+        "meal": "Flavoured Yogurt ",
+        "value": 221
+    },
+    {
+        "meal": "Halwa Puri",
+        "value": 600
+    },
+    {
+        "meal": "Chocolate Milk",
+        "value": 899
+    },
+    {
+        "meal": "Nutella (1 tbsp)",
+        "value": 100
+    },
+    {
+        "meal": "Chicken nugget",
+        "value": 59
+    },
+    {
+        "meal": "French toast ",
+        "value": 149
+    },
+    {
+        "meal": "Butter (1tbsp)",
+        "value": 102
+    },
+    {
+        "meal": "Jam (1 tbsp)",
+        "value": 56
+    },
+    {
+        "meal": "Chicken Pattie ",
+        "value": 172
+    },
+    {
+        "meal": "Donut ",
+        "value": 195
+    },
+    {
+        "meal": "Egg Sandwich ",
+        "value": 340
+    },
+    {
+        "meal": "Chicken Salad ",
+        "value": 105
+    },
+    {
+        "meal": "Smoothie",
+        "value": 90
+    },
+    {
+        "meal": "Brownie ",
+        "value": 112
+    },
+    {
+        "meal": "Pizza",
+        "value": 285
+    },
+    {
+        "meal": "Cold Coffee",
+        "value": 204
+    },
+    {
+        "meal": "Cookie",
+        "value": 220
+    },
+    {
+        "meal": "Banana ",
+        "value": 105
     }
 ]

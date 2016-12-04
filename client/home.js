@@ -1,4 +1,11 @@
 Template.home.helpers({
+    'submitted' : function () {
+      if(Session.get('submitted')){
+          return true;
+      } else {
+          return false;
+      }
+    },
     'food' : function () {
         var food = Calories.find({}).fetch();
         return food;
@@ -16,15 +23,31 @@ Template.home.helpers({
         var totalCalories = Session.get('totalCalories');
         var consumedCalories = Session.get('caloriesConsumed');
         var burnedCalories = Session.get('burnedCalories');
-
+        var gender = Session.get('gender');
         if(consumedCalories <= burnedCalories) {
-            return "fit";
+            if(gender == 'male'){
+                return "fit";
+            }
+            else {
+                return "fit-girl";
+            }
+
         }
-        else if(totalCalories < 1500){
-            return "fit"
+        else if(totalCalories < 1000){
+            if(gender == 'male'){
+                return "fit";
+            }
+            else {
+                return "fit-girl";
+            }
         }
-        else if (totalCalories >= 1500){
-            return "unfit";
+        else if (totalCalories >= 1000){
+            if(gender == 'male'){
+                return "unfit";
+            }
+            else {
+                return "unfit-girl";
+            }
         }
         else {
             return "fit";
@@ -34,23 +57,18 @@ Template.home.helpers({
 
 
 Template.home.events({
+    'submit .js-gender' : function (e) {
+        e.preventDefault();
+        var gender = e.target.gender.value;
+        console.log(gender);
+        Session.set('gender', gender);
+        Session.set('submitted', true);
+
+    },
     'click .js-everyday': function (e) {
         e.preventDefault();
         var totalCalories = Session.get('totalCalories');
-        var weight = Session.get('bodyWeight');
-        var workoutCalories = 0;
-        if(weight <= 56){
-            workoutCalories = 180;
-        }
-        else if(weight <= 70 && weight > 56){
-            workoutCalories = 223;
-        }
-        else if(weight <=83 && weight>70){
-            workoutCalories = 266;
-        }
-        else{
-            workoutCalories = 266;
-        }
+        var workoutCalories = 266;
         Session.set('burnedCalories', workoutCalories);
         totalCalories = totalCalories - workoutCalories;
         Session.set('totalCalories', totalCalories);
@@ -58,20 +76,7 @@ Template.home.events({
     'click .js-sometimes': function (e) {
         e.preventDefault();
         var totalCalories = Session.get('totalCalories');
-        var weight = Session.get('bodyWeight');
-        var workoutCalories = 0;
-        if(weight <= 56){
-            workoutCalories = 90;
-        }
-        else if(weight <= 70 && weight > 56){
-            workoutCalories = 112;
-        }
-        else if(weight <=83 && weight>70){
-            workoutCalories = 133;
-        }
-        else{
-            workoutCalories = 133;
-        }
+        var workoutCalories = 133;
 
         Session.set('burnedCalories', workoutCalories);
         totalCalories = totalCalories - workoutCalories;
@@ -82,11 +87,6 @@ Template.home.events({
         var totalCalories = Session.get('totalCalories');
         //Laziness adds more fat
         Session.set('totalCalories', totalCalories + 100);
-    },
-    'submit .js-weight' : function (e) {
-        e.preventDefault();
-        var value = parseInt(e.target.weight.value);
-        Session.set('bodyWeight', value);
     }
 });
 

@@ -78,11 +78,23 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-                        <h4 style="margin-top: 50px">Enter your Weight</h4>
-                        <form class="js-weight">
-                            <input style="width: 100%;" class="weightMeasure form-control" type="number" name="weight" placeholder="Only Numbers in KiloGrams" min="0" step="0.5">
-                            <a data-scroll href="#exercise"><button data-scroll  style="border:none; background: transparent; margin-top: 30px;" class="exerciseBtn button2" type="submit">Ok</button></a>
+                        <h1 style="margin-top: 70px; margin-bottom: 25px">Choose your Gender</h1>
+
+                        <form class="js-gender">
+                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                    <label class="btn active">
+                                        <input type="radio" name='gender'  value="male"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span>  Male</span>
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name='gender' value="female"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> Female</span>
+                                    </label>
+                                </div>
+                           <button style="border:none; background: transparent; margin-top: 30px; margin-bottom: 30px;" class="exerciseBtn button2" type="submit"> OK
+                           </button>
                         </form>
+                        {{#if submitted}}
+                            <a data-scroll href="#exercise" class="button2 exerciseBtn">Scroll Down</a>
+                        {{/if}}
                     </div>
                 </div>
             </div>
@@ -149,7 +161,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-4 text-center">
-                    <p>Project by: <a href="http://hammadsiddiqui.net">Hammad Siddiqui</a>, Misbah Azhar &amp;amp; Sakina Ijaz</p>
+                    <p>Project by: <a href="http://hammadsiddiqui.net">Hammad Siddiqui</a>, Misbah Azhar and Sakina Ijaz</p>
                 </div>
 
             </div>

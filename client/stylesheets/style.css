@@ -8,6 +8,87 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
+
+
+/*Custom Checkbox Begin*/
+
+label.btn span {
+    font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #fafafa;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+    color: #fafafa;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #fafafa;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #fafafa;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+    color: #fafafa;
+}
+
+div[data-toggle="buttons"] label.active{
+    color: #fafafa;
+}
+
+div[data-toggle="buttons"] label {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2em;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: none;
+    border: 0px solid
+    #fafafa;
+    border-radius: 3px;
+    color: #fafafa;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+    color: #fafafa;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+/*Custom Checkbox End*/
+
+
 body {
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
