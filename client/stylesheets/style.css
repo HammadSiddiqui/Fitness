@@ -96,8 +96,8 @@ body {
 
 #splashScreen {
     border-bottom: 10px #483535 solid;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 250px;
+    padding-bottom: 250px;
     background:rgba(0,0,0,.5) url('../img/img1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -108,7 +108,7 @@ body {
 
 #breadImg {
     position: relative;
-    bottom:-100px;
+    bottom:-300px;
 }
 
 #getStarted {
@@ -173,7 +173,7 @@ body {
 #exercise {
 
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 250px;
     background:rgba(0,0,0,.5) url('../img/excercise.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
